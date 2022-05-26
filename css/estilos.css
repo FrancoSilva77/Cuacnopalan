@@ -6,7 +6,7 @@
   --negro: #111;
 
   --fuentePrincipal: "Raleway", sans-serif;
-  --fuenteSecundaria: 'Lato', sans-serif;
+  --fuenteSecundaria: "Lato", sans-serif;
 }
 
 html {
@@ -46,6 +46,10 @@ h3 {
   font-size: 5rem;
 }
 
+p {
+  font-family: var(--fuenteSecundaria);
+}
+
 a {
   text-decoration: none;
 }
@@ -59,4 +63,54 @@ img {
   max-width: 120rem;
   margin: 0 auto;
   width: 90%;
+}
+
+/* Header */
+.header {
+  min-height: 40rem;
+  background-image: url(../img/IMG_20220515_080539-min.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.header__grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.titulo__heading {
+  margin: 0;
+  padding: 2rem 0;
+  color: var(--secundario);
+  font-size: 4rem;
+  text-align: center;
+}
+
+.titulo__texto {
+  margin: 0;
+  text-align: center;
+  font-size: 3rem;
+  color: var(--secundario);
+  font-weight: 700;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.nav__link {
+  color: var(--principal);
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.nav__link:hover {
+  text-decoration: underline;
+  color: var(--negro);
 }
